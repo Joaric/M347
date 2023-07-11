@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "1407f2b8-9b13-47a4-9fbb-bcdf1bb0e3fe",
+		"name": "M247",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20316284"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/charSheets"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"playerName\": \"Joao\",\r\n        \"characterName\": \"Karl\",\r\n        \"race\": \"Dwarf\",\r\n        \"characterClass\": \"Monk\",\r\n        \"level\": 20,\r\n        \"experiencePoints\": 100000,\r\n        \"strength\": 20,\r\n        \"dexterity\": 20,\r\n        \"constitution\": 20,\r\n        \"intelligence\": 20,\r\n        \"wisdom\": 20,\r\n        \"charisma\": 20\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/charSheets"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/charSheets/1"
+			},
+			"response": []
+		}
+	]
+}
