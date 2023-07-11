@@ -7,8 +7,10 @@ import java.util.Map;
 @Entity
 public class CharSheet {
     @Id
+    @SequenceGenerator(name = "char_sheet_id_sequence",
+    sequenceName = "char_sheet_id_sequence"
+      )
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
     private Long id;
 
     private String playerName;
