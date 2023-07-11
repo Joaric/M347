@@ -8,13 +8,14 @@ import java.util.Map;
 public class CharSheet {
     @Id
     @SequenceGenerator(name = "char_sheet_id_sequence",
-    sequenceName = "char_sheet_id_sequence"
+    sequenceName = "char_sheet_id_sequence",
+    allocationSize = 1
       )
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     private String playerName;
-    private String characterName;
+        private String characterName;
     private String race;
     private String characterClass;
     private int level;
